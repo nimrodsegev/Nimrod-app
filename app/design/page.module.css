@@ -1,0 +1,453 @@
+/* -------------------------------------------------------
+   Layout Structure
+------------------------------------------------------- */
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 100px;
+    background: #FFF7ED;
+    min-height: 100vh;
+    direction: rtl;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+  }
+  
+  /* Header section */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    max-width: 440px;
+    width: 100%;
+    padding: 40px 20px;
+    background: transparent !important;
+  }
+  
+  .titleWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 124px;
+    background: transparent !important;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-family: Georgia, serif;
+    font-weight: 800;
+    font-size: 115px;
+    line-height: 115px;
+    text-align: center;
+    background: linear-gradient(93.93deg, #829A83 0.31%, #D08469 106.49%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-family: 'SimplerPro_V3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 115%;
+    text-align: center;
+    color: #5F6040;
+    max-width: 358px;
+    margin: 0;
+    background: transparent !important;
+  }
+  
+  /* Sections wrapper */
+  .sectionsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 440px;
+    width: 100%;
+  }
+  
+  /* -------------------------------------------------------
+     Section Styling
+  ------------------------------------------------------- */
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 15px 15px;
+    gap: 50px;
+    background: rgba(247, 230, 217, 0.7);
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .sectionTitle {
+    font-family: 'SimplerPro_V3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    text-align: right;
+    color: #5F6040;
+    width: 100%;
+    max-width: 350px;
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+  
+  .subsectionTitle {
+    font-family: 'SimplerPro_V3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 115%;
+    text-align: right;
+    color: #5F6040;
+    width: 100%;
+    max-width: 350px;
+    margin: 0;
+  }
+  
+  /* Section image */
+  .sectionImage {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  /* -------------------------------------------------------
+     Bullet Points
+  ------------------------------------------------------- */
+  
+  .bulletPoints {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .bulletItem {
+    display: flex;
+    flex-direction: ltr;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 9px;
+    width: 100%;
+  }
+  
+  .bulletItem p {
+    font-family: 'SimplerPro_V3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 115%;
+    text-align: right;
+    color: #5F6040;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+  
+  .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* -------------------------------------------------------
+     Structure Boxes
+  ------------------------------------------------------- */
+  
+  .structureBoxes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .structureBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 9px;
+    flex: 1;
+    background: rgba(225, 214, 200, 0.6);
+    border-radius: 15px;
+  }
+  
+  .boxHeader {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+  }
+  
+  .boxHeader h4 {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 115%;
+    text-align: right;
+    letter-spacing: 0.08em;
+    color: #5F6040;
+    margin: 0;
+  }
+  
+  .boxIcon {
+    width: 19px;
+    height: 19px;
+    background: rgba(95, 96, 64, 0.2);
+    border-radius: 9999px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .boxIcon img {
+    width: 11px;
+    height: 11px;
+    object-fit: contain;
+  }
+  
+  .structureBox p {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 115%;
+    text-align: right;
+    color: #5F6040;
+    margin: 0;
+  }
+  
+  /* Example note under structure boxes */
+  .exampleNote {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 115%;
+    text-align: right;
+    color: #5F6040;
+    width: 100%;
+    max-width: 350px;
+    margin: 0;
+  }
+  
+  /* -------------------------------------------------------
+     Food Grid
+  ------------------------------------------------------- */
+  
+  .foodGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    gap: 25px 20px;
+    width: 100%;
+    max-width: 350px;
+    justify-content: center;
+  }
+  
+  .foodCard {
+    width: 75px;
+    height: 77.92px;
+    background: #C35731;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .foodCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 3.53px;
+    left: 0;
+  }
+  
+  /* -------------------------------------------------------
+     Audience Boxes
+  ------------------------------------------------------- */
+  
+  .audienceGrid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .audienceCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 10px;
+    gap: 9px;
+    flex: 1;
+    background: rgba(225, 214, 200, 0.6);
+    border-radius: 15px;
+  }
+  
+  .audienceCard h4 {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 115%;
+    text-align: right;
+    letter-spacing: 0.08em;
+    color: #5F6040;
+    margin: 0;
+  }
+  
+  .audienceCard p {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 115%;
+    text-align: right;
+    color: #5F6040;
+    margin: 0;
+  }
+  
+  /* -------------------------------------------------------
+     Context Boxes
+  ------------------------------------------------------- */
+  
+  .contextBoxes {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .contextBox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 9px;
+    flex: 1;
+    background: rgba(225, 214, 200, 0.6);
+    border-radius: 15px;
+  }
+  
+  .contextBox p {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 115%;
+    text-align: right;
+    letter-spacing: 0.08em;
+    color: #5F6040;
+    margin: 0;
+    flex: 1;
+  }
+  
+  .contextImage {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  /* -------------------------------------------------------
+     Mobile Responsive
+  ------------------------------------------------------- */
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+      gap: 60px;
+    }
+  
+    .title {
+      font-size: 80px;
+      line-height: 80px;
+    }
+  
+    .titleWrapper {
+      padding: 0 50px;
+    }
+  
+    .subtitle {
+      font-size: 15px;
+    }
+  
+    .sectionsWrapper {
+      gap: 50px;
+    }
+  
+    .section {
+      padding: 20px 10px;
+      gap: 30px;
+    }
+  
+    .sectionTitle {
+      font-size: 24px;
+    }
+  
+    .structureBoxes,
+    .audienceGrid,
+    .contextBoxes {
+      flex-direction: column;
+    }
+  
+    .foodGrid {
+      gap: 15px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+      gap: 40px;
+    }
+  
+    .title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+  
+    .titleWrapper {
+      padding: 0 20px;
+    }
+  
+    .subtitle {
+      font-size: 14px;
+    }
+  
+    .sectionTitle {
+      font-size: 20px;
+    }
+  
+    .bulletItem p,
+    .structureBox p,
+    .audienceCard p,
+    .exampleNote {
+      font-size: 15px;
+    }
+  }
+  

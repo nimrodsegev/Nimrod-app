@@ -1,56 +1,47 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <div>
-        <h2>Welcome to the Product Jam Starter Kit</h2>
-        <p>
-          Feel free to look around, edit the source code and navigate to the
-          demos.
-        </p>
-        <Image
-          src="/huji.svg"
-          alt="HUJI Logo"
-          width="80"
-          height="80"
-          priority
-        />
-        <Image
-          src="/bezalel.svg"
-          alt="Bezalel Logo"
-          className="item"
-          width="80"
-          height="80"
-          priority
-        />
-        <div>
-          <h2>Lorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            faucibus sit amet nunc nec vehicula. Fusce ornare nec nulla non
-            imperdiet. Fusce vel sodales justo. Sed efficitur arcu lorem, at
-            iaculis odio ultricies et. Duis rutrum urna nec elit bibendum, sed
-            hendrerit nulla posuere. Vestibulum vestibulum, ante non tincidunt
-            posuere, dui arcu lacinia nisl, nec rhoncus massa arcu ac ipsum. Nam
-            congue interdum tortor, eu dignissim massa scelerisque vitae. Sed
-            ultricies bibendum congue. Praesent non magna id ligula maximus
-            luctus. Donec vitae nibh quis neque luctus sagittis et eget nunc.
-            Aliquam id ullamcorper lacus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Pellentesque habitant morbi tristique
-            senectus et netus et malesuada fames ac turpis egestas. Curabitur
-            tempor quis dolor a lacinia.
-          </p>
-          <ul>
-            <li>
-              Aliquam maximus tellus sed lacus venenatis, ac cursus eros mollis.
-            </li>
-            <li>In id ante sed sem pharetra molestie et vitae arcu.</li>
-            <li>Cras pharetra turpis at pretium elementum.</li>
-            <li>Donec ultrices felis vel lectus auctor iaculis.</li>
-          </ul>
-        </div>
+    <main style={{ padding: "40px", textAlign: "center" }}>
+      <h1 style={{ marginBottom: "10px" }}>Welcome Buddy!</h1>
+      <p style={{ color: "#555", marginBottom: "40px" }}>
+        Explore the different parts of my project:
+      </p>
+
+      {/* Links Section */}
+      <div style={{ display: "flex", flexDirection: "column", gap: "20px", maxWidth: "300px", margin: "0 auto" }}>
+        
+        <Link href="/tic-tac-toe" style={linkStyle}>
+          🎮 Tic Tac Toe Game
+        </Link>
+
+        <Link href="/art" style={linkStyle}>
+          🎨 Art Page
+        </Link>
+
+        <Link href="/design" style={linkStyle}>
+          📱 Reciply Design Page
+        </Link>
+
+      </div>
+
+      {/* Logos */}
+      <div style={{ marginTop: "60px", display: "flex", justifyContent: "center", gap: "30px" }}>
+        <Image src="/huji.svg" alt="HUJI Logo" width={80} height={80} priority />
+        <Image src="/bezalel.svg" alt="Bezalel Logo" width={80} height={80} priority />
       </div>
     </main>
   );
 }
+
+const linkStyle: React.CSSProperties = {
+  padding: "12px 18px",
+  background: "#f5efe6",
+  borderRadius: "10px",
+  fontSize: "18px",
+  color: "#5F6040",
+  textDecoration: "none",
+  fontWeight: 600,
+  display: "block",
+};
