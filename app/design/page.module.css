@@ -51,7 +51,7 @@
   }
   
   .subtitle {
-    font-family: 'SimplerPro_V3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-family: "SimplerPro_V3-Regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     font-weight: 400;
     font-size: 17px;
     line-height: 115%;
@@ -61,6 +61,7 @@
     margin: 0;
     background: transparent !important;
   }
+
   
   /* Sections wrapper */
   .sectionsWrapper {
@@ -88,7 +89,7 @@
   }
   
   .sectionTitle {
-    font-family: 'SimplerPro_V3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-family: "SimplerPro_V3-Regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     font-weight: 900;
     font-size: 32px;
     line-height: 100%;
@@ -98,10 +99,11 @@
     max-width: 350px;
     margin: 0;
     letter-spacing: -0.02em;
+    text-shadow: 0 0 0.5px #5F6040, 0 0 0.5px #5F6040;
   }
   
   .subsectionTitle {
-    font-family: 'SimplerPro_V3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-family: "SimplerPro_V3-Regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     font-weight: 900;
     font-size: 18px;
     line-height: 115%;
@@ -110,6 +112,7 @@
     width: 100%;
     max-width: 350px;
     margin: 0;
+    text-shadow: 0 0 0.5px #5F6040, 0 0 0.5px #5F6040;
   }
   
   /* Section image */
@@ -143,7 +146,7 @@
   }
   
   .bulletItem p {
-    font-family: 'SimplerPro_V3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-family: "SimplerPro_V3-Regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
     font-weight: 400;
     font-size: 17px;
     line-height: 115%;

@@ -1,3 +1,4 @@
+@import url("./fonts.css");
 @import url("reset.css");
 /* This is a custom font from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
@@ -81,6 +82,8 @@ li {
   margin-top: 0.3rem;
 }
 
+/* REMOVED global h1-h6 font-family so design page can use SimplerPro */
+/* If you need Rubik on other pages, add it specifically to those pages */
 h1,
 h2,
 h3,
@@ -88,7 +91,7 @@ h4,
 h5,
 h6 {
   margin-top: 1rem;
-  font-family: var(--font-titles);
+  /* font-family: var(--font-titles); ← COMMENTED OUT */
   font-weight: 500;
   font-optical-sizing: auto;
 }

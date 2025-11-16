@@ -85,7 +85,7 @@ export default function Board() {
       <button onClick={handleRestart} className={styles.restartButton}>
         🔄 Restart Game
         </button>
-      <div className={styles.footer}>Made with by Nimrod</div>
+      <div className={styles.footer}>Nimrod Segev</div>
     </main>
   );
 }
