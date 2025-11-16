@@ -388,7 +388,7 @@
     object-fit: cover;
   }
   
-  /* -------------------------------------------------------
+/* -------------------------------------------------------
      Mobile Responsive
   ------------------------------------------------------- */
   
@@ -400,7 +400,7 @@
   
     .title {
       font-size: 80px;
-      line-height: 80px;
+      line-height: 90px;
     }
   
     .titleWrapper {
@@ -424,10 +424,9 @@
       font-size: 24px;
     }
   
-    .structureBoxes,
-    .audienceGrid,
-    .contextBoxes {
-      flex-direction: column;
+    /* Keep boxes horizontal on tablet */
+    .audienceCard {
+      max-width: 98px;
     }
   
     .foodGrid {
@@ -443,7 +442,7 @@
   
     .title {
       font-size: 60px;
-      line-height: 60px;
+      line-height: 70px;
     }
   
     .titleWrapper {
