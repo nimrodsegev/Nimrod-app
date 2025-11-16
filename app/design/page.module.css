@@ -4,6 +4,7 @@
 
 /* Main container */
 .container {
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,6 +43,7 @@
     font-weight: 800;
     font-size: 115px;
     line-height: 115px;
+    padding-bottom: 15px;
     text-align: center;
     background: linear-gradient(93.93deg, #829A83 0.31%, #D08469 106.49%);
     -webkit-background-clip: text;
@@ -254,6 +256,8 @@
     width: 100%;
     max-width: 350px;
     margin: 0;
+    margin-top: -30px;
+
   }
   
   /* -------------------------------------------------------
@@ -267,6 +271,8 @@
     width: 100%;
     max-width: 350px;
     justify-content: center;
+    margin-top: -10px;
+
   }
   
   .foodCard {
@@ -280,11 +286,12 @@
   
   .foodCard img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
     position: absolute;
-    top: 3.53px;
     left: 0;
+    height: 60px;
+    object-fit: cover;
+    top: 3px;
   }
   
   /* -------------------------------------------------------
@@ -298,9 +305,11 @@
     gap: 25px;
     width: 100%;
     max-width: 350px;
+    
   }
   
   .audienceCard {
+    margin-top: -25px; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -309,6 +318,8 @@
     flex: 1;
     background: rgba(225, 214, 200, 0.6);
     border-radius: 15px;
+    max-width: 98px;
+
   }
   
   .audienceCard h4 {
@@ -337,6 +348,7 @@
   ------------------------------------------------------- */
   
   .contextBoxes {
+    margin-top: -30px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
