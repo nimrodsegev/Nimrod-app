@@ -432,6 +432,24 @@
     .foodGrid {
       gap: 15px 20px;
     }
+
+  .foodCard {
+    width: 70px;        /* Smaller than 75px */
+    height: 72px;       /* Smaller height */
+  }
+  
+  .foodCard img {
+    height: 56px;       /* Smaller image height */
+  }
+  
+  .foodGrid {
+    grid-template-columns: repeat(4, 70px);  /* Match new card width */
+    gap: 18px 15px;     /* Tighter gaps */
+  }
+  
+  .exampleNote {
+    margin-top: -20px;  /* Less negative, so it moves down */
+  }
   }
   
   @media (max-width: 480px) {
