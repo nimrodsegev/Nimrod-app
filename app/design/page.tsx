@@ -131,21 +131,25 @@ export default function DesignPage() {
 
           <div className={styles.contextBoxes}>
 
-            <div className={styles.contextBox}>
-              <p>קבוצות קהילה (בזמן הבישול)</p>
-              <div className={styles.boxIcon}>
-                <img src="/images-from-figma/icons/Vector (4).png" alt="" />
-              </div>
-            </div>
+    <div className={styles.contextBox}>
+     <p>
+      קבוצות קהילה <span className={styles.lightText}>(בזמן הבישול)</span>
+    </p>
+    <div className={styles.boxIcon}>
+      <img src="/images-from-figma/icons/Vector (4).png" alt="" />
+    </div>
+  </div>
 
-            <div className={styles.contextBox}>
-              <p>מחוץ לבית (קניות, השראה)</p>
-              <div className={styles.boxIcon}>
-                <img src="/images-from-figma/icons/Vector (5).png" alt="" />
-              </div>
-            </div>
+  <div className={styles.contextBox}>
+    <p>
+      מחוץ לבית <span className={styles.lightText}>(קניות, השראה)</span>
+    </p>
+    <div className={styles.boxIcon}>
+      <img src="/images-from-figma/icons/Vector (5).png" alt="" />
+    </div>
+  </div>
 
-          </div>
+</div>
 
           <img
             src="/images-from-figma/image25.png"

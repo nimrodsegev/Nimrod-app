@@ -1,6 +1,6 @@
-/* SimplerPro – base family name we'll use: "SimplerPro" */
+/* SimplerPro Font Family - Using exact internal font names */
 @font-face {
-    font-family: "SimplerPro";
+    font-family: "SimplerPro_V3-Regular";
     src: url("/fonts/SimplerPro_V3-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
@@ -8,7 +8,7 @@
   }
   
   @font-face {
-    font-family: "SimplerPro";
+    font-family: "SimplerPro_V3-RegularItalic";
     src: url("/fonts/SimplerPro_V3-RegularItalic.otf") format("opentype");
     font-weight: 400;
     font-style: italic;
@@ -16,10 +16,27 @@
   }
   
   @font-face {
-    font-family: "SimplerPro";
+    font-family: "SimplerPro_V3-LightItalic";
     src: url("/fonts/SimplerPro_V3-LightItalic.otf") format("opentype");
     font-weight: 300;
     font-style: italic;
     font-display: swap;
   }
   
+  /* ADD THESE TWO: */
+  
+  @font-face {
+    font-family: "SimplerPro_V3-Black";
+    src: url("/fonts/SimplerPro_V3-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "SimplerPro_V3-Light";
+    src: url("/fonts/SimplerPro_V3-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
